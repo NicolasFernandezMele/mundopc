@@ -24,7 +24,7 @@
     .encabezado {
         background-color: rgb(236, 204, 144);
         padding: 15px;
-        height: 5vh;
+        height: 8vh;
         -webkit-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
         -moz-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
         box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
@@ -33,6 +33,12 @@
     
     .centrado {
         margin: 0 auto;
+    }
+    
+    dl,
+    ol,
+    ul {
+        margin-bottom: 0;
     }
     
     .contenedor__imagen {
@@ -103,10 +109,6 @@
     
     .titulo {
         font-size: 25px;
-    }
-    
-    .titulo-a {
-        px
     }
     
     nav {
