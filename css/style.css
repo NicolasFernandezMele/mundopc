@@ -27,7 +27,7 @@
     }
     
     .encabezado {
-        background-color: rgb(236, 204, 144);
+        background: linear-gradient(90deg, rgba(246, 255, 130, 1) 0%, rgba(249, 252, 134, 1) 100%, rgba(255, 0, 0, 1) 100%);
         padding: 15px;
         height: 8vh;
         -webkit-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
