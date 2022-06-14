@@ -4,6 +4,11 @@
         font-family: 'Krub', sans-serif;
         font-family: 'Roboto', sans-serif;
     }
+    /* CENTRADO */
+    
+    .centro {
+        margin: 0 auto;
+    }
     
     .sombras {
         -webkit-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
