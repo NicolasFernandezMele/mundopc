@@ -92,6 +92,7 @@
     
     section {
         grid-area: contenido;
+        margin: 0 auto;
     }
     
     footer {
