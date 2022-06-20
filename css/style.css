@@ -4,11 +4,29 @@
         font-family: 'Krub', sans-serif;
         font-family: 'Roboto', sans-serif;
     }
+    
+    dl,
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
+    
+    img {
+        width: 20%;
+    }
+    /* ////////////////////////////////////////////////////////////////////// */
     /* CENTRADO */
     
     .centro {
         margin: 0 auto;
     }
+    
+    .centrado {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* UTILIDADES */
     
     .sombras {
         -webkit-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
@@ -19,47 +37,13 @@
     .bordes {
         border-radius: 15px;
     }
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* DISEÑO */
     
     .diseño {
         display: grid;
-        grid-template-areas: "nav nav" "aside main" "footer footer";
+        grid-template-areas: "nav nav" "main main" "footer footer";
         grid-template-columns: 15% 85%;
-    }
-    
-    .encabezado {
-        background: linear-gradient(90deg, rgba(246, 255, 130, 1) 0%, rgba(249, 252, 134, 1) 100%, rgba(255, 0, 0, 1) 100%);
-        padding: 15px;
-        height: 8vh;
-        -webkit-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
-        -moz-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
-        box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
-        z-index: 1;
-    }
-    
-    .centrado {
-        margin: 0 auto;
-    }
-    
-    dl,
-    ol,
-    ul {
-        margin-bottom: 0;
-    }
-    
-    .contenedor__imagen {
-        width: 60%;
-        margin: 0 auto;
-    }
-    
-    .contenido {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    .centrado h2 {
-        margin: 12px;
     }
     
     header {
@@ -83,6 +67,46 @@
         z-index: 1;
     }
     
+    section {
+        grid-area: contenido;
+        margin: 0 auto;
+    }
+    
+    footer {
+        grid-area: footer;
+        height: 15vh;
+        background-color: black;
+    }
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* HEADER */
+    
+    .encabezado {
+        background: linear-gradient(90deg, rgba(246, 255, 130, 1) 0%, rgba(249, 252, 134, 1) 100%, rgba(255, 0, 0, 1) 100%);
+        padding: 15px;
+        height: 8vh;
+        -webkit-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
+        box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
+        z-index: 1;
+    }
+    
+    .contenedor__imagen {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .contenido {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .centrado h2 {
+        margin: 12px;
+    }
+    /* ASIDE */
+    
     aside {
         text-align: center;
     }
@@ -95,23 +119,13 @@
         margin-top: 25px
     }
     
-    section {
-        grid-area: contenido;
-        margin: 0 auto;
-    }
-    
-    footer {
-        grid-area: footer;
-        height: 15vh;
-        background-color: black;
-    }
-    
     .titulo1 {
         display: inline;
         color: rgb(205, 73, 73);
         font-size: 40px;
         margin-right: 400px;
     }
+    /* ///////////////////////////////////////////////////////// */
     
     .titulo {
         font-size: 25px;
@@ -148,7 +162,7 @@
         color: #6b757b;
         font-size: 15px;
     }
-    
+    /*     
     .tabla_ofertas {
         border: 2px solid black;
         margin: auto;
@@ -165,7 +179,8 @@
         background-color: #6ea8cf;
         color: #fff;
         text-transform: uppercase;
-    }
+    } */
+    /* FOOTER */
     
     .footer_nav {
         max-width: 1000px;
@@ -183,6 +198,7 @@
     .footer_nav li a {
         color: #fff;
     }
+    /* ///////////////////////////////////////////////////////// */
     
     .organiza__perifericos img {
         margin: auto;
@@ -194,10 +210,7 @@
     .organiza__perifericos p {
         text-align: center;
     }
-    
-    img {
-        width: 20%;
-    }
+    /* CONTACTO */
     
     form {
         border: 2px solid black;
@@ -221,6 +234,7 @@
     .check {
         width: 30px;
     }
+    /* /////////////////////////////////////////////////////////// */
     
     .contenedor__video__fila1 iframe {
         padding: 10px;
@@ -251,6 +265,7 @@
     .logo {
         text-decoration: none;
     }
+    /* SECTION 1 */
     
     .contenedor__tarjetas {
         display: grid;
@@ -271,14 +286,6 @@
     
     .contenido__tarjetas img {
         width: 100%;
-    }
-    
-    .quienessomos {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     
     section img {
@@ -302,7 +309,20 @@
         color: white;
     }
     
-    .banner {
+    .precios {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    
+    .quienessomos {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .banner {
         background-image: url(https://www.destreaming.es/wp-content/uploads/2020/11/pc_para_streaming_gaming.jpg);
         background-size: cover;
         background-position: 0px -185px;
@@ -319,6 +339,13 @@
     
     .banner h2 {
         color: white;
+    } */
+    /* SECTION2 */
+    
+    .main-section2 {
+        background-color: #6b757b;
+        color: white;
+        padding: 2rem 0;
     }
     
     @media (max-width:1200px) {
