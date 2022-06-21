@@ -1,506 +1,337 @@
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Krub', sans-serif;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    dl,
-    ol,
-    ul {
-        margin-bottom: 0;
-    }
-    
-    img {
-        width: 20%;
-    }
-    /* ////////////////////////////////////////////////////////////////////// */
-    /* CENTRADO */
-    
-    .centro {
-        margin: 0 auto;
-    }
-    
-    .centrado {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
-    /* ////////////////////////////////////////////////////////////////////// */
-    /* UTILIDADES */
-    
-    .sombras {
-        -webkit-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
-        -moz-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
-        box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
-    }
-    
-    .bordes {
-        border-radius: 15px;
-    }
-    /* ////////////////////////////////////////////////////////////////////// */
-    /* DISEÑO */
-    
-    .diseño {
-        display: flex;
-        grid-template-areas: "nav nav" "main main" "footer footer";
-        grid-template-columns: 15% 85%;
-        flex-direction: column;
-    }
-    
-    .diseño2 {
-        display: grid;
-        grid-template-areas: "nav nav" "aside main" "footer footer";
-        grid-template-columns: 15% 85%;
-    }
-    
-    header {
-        grid-area: nav;
-    }
-    
-    main {
-        grid-area: main;
-        min-height: 72vh;
-        background-color: azure;
-    }
-    
-    aside {
-        grid-area: aside;
-        height: 100%;
-        padding: 20px;
-        align-content: center;
-        -webkit-box-shadow: 11px 1px 5px -1px rgba(0, 0, 0, 0.28);
-        -moz-box-shadow: 11px 1px 5px -1px rgba(0, 0, 0, 0.28);
-        box-shadow: 17px 9px 28px -1px rgb(0 0 0 / 28%);
-        z-index: 1;
-    }
-    
-    section {
-        grid-area: contenido;
-        margin: 0 auto;
-    }
-    
-    footer {
-        grid-area: footer;
-        height: 15vh;
-        background-color: black;
-    }
-    /* ////////////////////////////////////////////////////////////////////// */
-    /* HEADER */
-    
-    .encabezado {
-        background: linear-gradient(90deg, rgba(246, 255, 130, 1) 0%, rgba(249, 252, 134, 1) 100%, rgba(255, 0, 0, 1) 100%);
-        padding: 15px;
-        height: 8vh;
-        -webkit-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
-        -moz-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
-        box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
-        z-index: 1;
-    }
-    
-    .contenedor__imagen {
-        width: 60%;
-        margin: 0 auto;
-    }
-    
-    .contenido {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    .centrado h2 {
-        margin: 12px;
-    }
-    /* ASIDE */
-    
-    aside {
-        text-align: center;
-    }
-    
-    aside h2 {
-        font-size: 20px;
-    }
-    
-    aside h3 {
-        margin-top: 25px
-    }
-    
-    .titulo1 {
-        display: inline;
-        color: rgb(205, 73, 73);
-        font-size: 40px;
-        margin-right: 400px;
-    }
-    /* ///////////////////////////////////////////////////////// */
-    
-    .titulo {
-        font-size: 25px;
-    }
-    
-    nav {
-        display: inline;
-    }
-    
-    .navegacion {
-        display: flex;
-    }
-    
-    .navegacion li,
-    aside ul li {
-        list-style: none;
-    }
-    
-    li a {
-        text-decoration: none;
-        color: rgb(205, 73, 73);
-        font-size: 14px;
-        margin-right: 15px;
-        transition: 0.4s;
-    }
-    
-    h2 {
-        text-align: center;
-        font-size: 40px;
-        text-transform: uppercase;
-    }
-    
-    li a:hover {
-        color: #6b757b;
-        font-size: 15px;
-    }
-    /*     
-    .tabla_ofertas {
-        border: 2px solid black;
-        margin: auto;
-    }
-    
-    .tabla_ofertas_celdas {
-        border: 2px solid black;
-        width: 20vw;
-        height: 25px;
-        text-align: center;
-    }
-    
-    .tabla_ofertas_celdas--encabezados {
-        background-color: #6ea8cf;
-        color: #fff;
-        text-transform: uppercase;
-    } */
-    /* FOOTER */
-    
-    .footer_nav {
-        max-width: 1000px;
-        margin: auto;
-        display: block;
-        text-align: center;
-        padding-top: 50px;
-    }
-    
-    .footer_nav li {
-        color: #fff;
-        text-align: center;
-    }
-    
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Krub', sans-serif;
+  font-family: 'Roboto', sans-serif; }
+
+dl,
+ol,
+ul {
+  margin-bottom: 0; }
+
+img {
+  width: 20%; }
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase; }
+
+li a {
+  text-decoration: none;
+  color: #cd4949;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: 0.4s; }
+
+lihover {
+  color: #6b757b;
+  font-size: 15px; }
+
+/* UTILIDADES */
+/* CENTRADO */
+.centro {
+  margin: 0 auto; }
+
+.centrado {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.sombras {
+  -webkit-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
+  box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28); }
+
+.bordes {
+  border-radius: 15px; }
+
+/* DISEÑO */
+.diseño {
+  display: flex;
+  grid-template-areas: "nav nav" "main main" "footer footer";
+  grid-template-columns: 15% 85%;
+  flex-direction: column; }
+
+.diseño2 {
+  display: grid;
+  grid-template-areas: "nav nav" "aside main" "footer footer";
+  grid-template-columns: 15% 85%; }
+
+header {
+  grid-area: nav; }
+
+main {
+  grid-area: main;
+  min-height: 72vh;
+  background-color: azure; }
+
+aside {
+  grid-area: aside;
+  height: 100%;
+  padding: 20px;
+  align-content: center;
+  -webkit-box-shadow: 11px 1px 5px -1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 11px 1px 5px -1px rgba(0, 0, 0, 0.28);
+  box-shadow: 17px 9px 28px -1px rgba(0, 0, 0, 0.28);
+  z-index: 1; }
+
+section {
+  grid-area: contenido;
+  margin: 0 auto; }
+
+footer {
+  grid-area: footer;
+  height: 15vh;
+  background-color: black; }
+
+/* HEADER */
+.encabezado {
+  background: linear-gradient(90deg, #f6ff82 0%, #f9fc86 100%, red 100%);
+  padding: 15px;
+  height: 80px;
+  -webkit-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.28);
+  z-index: 1; }
+
+.contenedor__imagen {
+  width: 60%;
+  margin: 0 auto; }
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center; }
+
+.centrado h2 {
+  margin: 12px; }
+
+.titulo {
+  font-size: 25px; }
+
+nav {
+  display: inline; }
+
+.navegacion {
+  display: flex; }
+  .navegacion li {
+    list-style: none; }
+
+.logo {
+  text-decoration: none; }
+
+/* ASIDE */
+aside {
+  text-align: center; }
+  aside h2 {
+    font-size: 20px; }
+  aside h3 {
+    margin-top: 25px; }
+  aside ul li {
+    list-style: none; }
+
+.titulo1 {
+  display: inline;
+  color: #cd4949;
+  font-size: 40px;
+  margin-right: 400px; }
+
+/* FOOTER */
+.footer_nav {
+  max-width: 1000px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding-top: 50px; }
+  .footer_nav li {
+    color: #fff;
+    text-align: center; }
     .footer_nav li a {
-        color: #fff;
-    }
-    /* ///////////////////////////////////////////////////////// */
-    
-    .organiza__perifericos img {
-        margin: auto;
-        width: 50%;
-        margin-left: 146px;
-    }
-    
-    .organiza__perifericos h3,
-    .organiza__perifericos p {
-        text-align: center;
-    }
-    /* CONTACTO */
-    
-    form {
-        border: 2px solid black;
-        padding: 20px;
-        width: 100%;
-    }
-    
-    input,
-    textarea,
-    select {
-        margin-bottom: 20px;
-        width: 100%;
-        height: 40px;
-    }
-    
-    textarea {
-        height: 80px;
-    }
-    
-    .check {
-        width: 30px;
-    }
-    
-    .fondo--contacto {
-        background-image: url("http://www.bytescode.com/images/ArmadoPC.jpg");
-    }
-    
-    .contenedor--contacto {
-        background-color: rgba(182, 182, 182, 0.945);
-        padding: 25px;
-    }
-    
-    .mapa {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    
-    .gridpersonal {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    /* /////////////////////////////////////////////////////////// */
-    
-    .contenedor__video__fila1 iframe {
-        padding: 10px;
-    }
-    
-    .contenedor__video__fila1 {
-        margin-left: 70px;
-    }
-    
-    .contenedor__video__fila2 iframe {
-        padding: 10px;
-    }
-    
-    .contenedor__video__fila2 {
-        margin-left: 70px;
-    }
-    
-    .caja__imagen,
-    .caja__imagen p,
-    .caja__imagen h3 {
-        display: inline;
-    }
-    
-    .organiza__perifericos td {
-        padding: 12px;
-    }
-    
-    .logo {
-        text-decoration: none;
-    }
-    /* SECTION 1 */
-    
-    .precio--tachado {
-        text-decoration: line-through;
-    }
-    
-    .contenedor__tarjetas {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 1100px;
-    }
-    
-    .contenido__tarjetas {
-        margin: 15px;
-        transition: 0.3s;
-        background-color: white;
-        padding: 15px;
-    }
-    
-    .contenido__tarjetas:hover {
-        transform: scale(1.11);
-    }
-    
-    .contenido__tarjetas img {
-        width: 100%;
-    }
-    
-    section img {
-        width: 100%;
-    }
-    
-    button {
-        padding: 15px;
-        width: 100%;
-        margin-top: 15px;
-        transition: 0.3s;
-        border-radius: 10px;
-        border-width: 0;
-    }
-    
-    button:hover {
-        padding: 15px;
-        width: 100%;
-        margin-top: 15px;
-        background-color: rgb(88, 121, 103);
-        color: white;
-    }
-    
-    .precios {
-        display: flex;
-        justify-content: space-around;
-    }
-    /* ///////////////////////////////////////////////////////// */
-    /* .banner {
-        background-image: url(https://www.destreaming.es/wp-content/uploads/2020/11/pc_para_streaming_gaming.jpg);
-        background-size: cover;
-        background-position: 0px -185px;
-        width: 75%;
-        height: 27vh;
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    
-    .banner h2 {
-        color: white;
-    } */
-    /* SECTION2 */
-    
-    .main-section2 {
-        background-color: #6b757b;
-        color: white;
-        padding: 2rem 0;
-    }
-    
-    .contenedor__tarjetas--section2 {
-        display: flex;
-        flex-direction: column;
-        height: 25%;
-        gap: 10px;
-        color: rgba(19, 17, 17, 0.28);
-    }
-    
-    .contenido__tarjetas--section2 {
-        display: flex;
-        border-radius: 15px;
-        background-color: rgb(214, 212, 212);
-        padding: 20px;
-        gap: 15px;
-    }
-    
-    .contenido__tarjetas--section2 p {
-        padding: 10px;
-    }
-    
-    .contenido__tarjetas--section2 button {
-        width: 300px;
-        height: 75px;
-    }
-    /* CURSOS */
-    
-    .contenedor__tarjetas--cursos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-    
-    .contenido__tarjetas--cursos {
-        background-color: #6b757b;
-        border-radius: 15px;
-        padding: 30px;
-        color: white;
-    }
-    
-    .main--curso {
-        margin-bottom: 25px;
-    }
-    
-    .precios--cursos {
-        font-size: 30px;
-        text-align: center;
-    }
-    /* QUIENES SOMOS */
-    
-    .contenido--quienes {
-        display: flex;
-        margin-bottom: 40px;
-        height: 100vh;
-        align-items: center;
-    }
-    
-    .quienessomos {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-area: info;
-    }
-    
-    @media (max-width:1200px) {
-        .contenido {
-            flex-direction: column;
-            text-align: center;
-        }
-        .titulo1 {
-            margin-right: 0;
-        }
-        .encabezado {
-            height: 10vh;
-        }
-        .contenedor__tarjetas {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .contenido__tarjetas:hover {
-            transform: scale(1.1);
-        }
-    }
-    
-    @media (max-width:750px) {
-        aside {
-            display: none;
-        }
-        .navegacion {
-            flex-direction: column;
-        }
-        .encabezado {
-            height: auto;
-        }
-        .diseño {
-            display: flex;
-            flex-direction: column;
-        }
-        .contenedor__tarjetas {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .contenido__tarjetas:hover {
-            transform: scale(1.0);
-        }
-        .contenedor__tarjetas--cursos {
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-        }
-    }
-    
-    @media (max-width:900px) {
-        .contenido__tarjetas--section2 {
-            flex-direction: column;
-        }
-        .contenido--quienes {
-            display: flex;
-            flex-direction: column;
-        }
-        .imagen--contacto {
-            display: none;
-        }
-        .contenedor__tarjetas--cursos {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    
-    @media (max-width:1000px) {
-        .gridpersonal {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+      color: #fff; }
+
+/* CONTACTO */
+form {
+  border: 2px solid black;
+  padding: 20px;
+  width: 100%; }
+
+input,
+textarea,
+select {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px; }
+
+textarea {
+  height: 80px; }
+
+.check {
+  width: 30px; }
+
+.fondo--contacto {
+  background-image: url("http://www.bytescode.com/images/ArmadoPC.jpg"); }
+
+.contenedor--contacto {
+  background-color: rgba(182, 182, 182, 0.945);
+  padding: 25px; }
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; }
+
+.gridpersonal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; }
+
+/* INDEX */
+/* SECTION 1 */
+.precio--tachado {
+  text-decoration: line-through; }
+
+.contenedor__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px; }
+
+.contenido__tarjetas {
+  margin: 15px;
+  transition: 0.3s;
+  background-color: white;
+  padding: 15px; }
+  .contenido__tarjetashover {
+    transform: scale(1.11); }
+  .contenido__tarjetas img {
+    width: 100%; }
+
+section img {
+  width: 100%; }
+
+button {
+  padding: 15px;
+  width: 100%;
+  margin-top: 15px;
+  transition: 0.3s;
+  border-radius: 10px;
+  border-width: 0; }
+  buttonhover {
+    padding: 15px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #587967;
+    color: white; }
+
+.precios {
+  display: flex;
+  justify-content: space-around; }
+
+/* SECTION2 */
+.main-section2 {
+  background-color: #6b757b;
+  color: white;
+  padding: 2rem 0; }
+
+.contenedor__tarjetas--section2 {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  gap: 10px;
+  color: rgba(19, 17, 17, 0.28); }
+
+.contenido__tarjetas--section2 {
+  display: flex;
+  border-radius: 15px;
+  background-color: #d6d4d4;
+  padding: 20px;
+  gap: 15px; }
+  .contenido__tarjetas--section2 button {
+    width: 300px;
+    height: 75px; }
+
+.contenido__tarjetas--section2 p {
+  padding: 10px; }
+
+/* CURSOS */
+.contenedor__tarjetas--cursos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; }
+
+.contenido__tarjetas--cursos {
+  background-color: #6b757b;
+  border-radius: 15px;
+  padding: 30px;
+  color: white; }
+
+.main--curso {
+  margin-bottom: 25px; }
+
+.precios--cursos {
+  font-size: 30px;
+  text-align: center; }
+
+/* QUIENES SOMOS */
+.contenido--quienes {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center; }
+
+.quienessomos {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: info; }
+
+/* MEDIAS */
+@media (max-width: 1200px) {
+  .contenido {
+    flex-direction: column;
+    text-align: center; }
+  .titulo1 {
+    margin-right: 0; }
+  .contenedor__tarjetas {
+    grid-template-columns: repeat(2, 1fr); }
+  .contenido__tarjetas:hover {
+    transform: scale(1.1); }
+  .encabezado {
+    height: 110px; } }
+
+@media (max-width: 750px) {
+  aside {
+    display: none; }
+  .navegacion {
+    flex-direction: column; }
+  .diseño {
+    display: flex;
+    flex-direction: column; }
+  .contenedor__tarjetas {
+    grid-template-columns: repeat(1, 1fr); }
+  .contenido__tarjetas:hover {
+    transform: scale(1); }
+  .contenedor__tarjetas--cursos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; }
+  .encabezado {
+    height: 210px; } }
+
+@media (max-width: 900px) {
+  .contenido__tarjetas--section2 {
+    flex-direction: column; }
+  .contenido--quienes {
+    display: flex;
+    flex-direction: column; }
+  .imagen--contacto {
+    display: none; }
+  .contenedor__tarjetas--cursos {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 1000px) {
+  .gridpersonal {
+    display: flex;
+    flex-direction: column; } }
