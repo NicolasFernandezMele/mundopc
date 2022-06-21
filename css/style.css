@@ -421,8 +421,7 @@
     /* QUIENES SOMOS */
     
     .contenido--quienes {
-        display: grid;
-        grid-template-areas: "info mapa";
+        display: flex;
         margin-bottom: 40px;
         height: 100vh;
         align-items: center;
@@ -476,6 +475,11 @@
         .contenido__tarjetas:hover {
             transform: scale(1.0);
         }
+        .contenedor__tarjetas--cursos {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
     }
     
     @media (max-width:900px) {
@@ -485,6 +489,12 @@
         .contenido--quienes {
             display: flex;
             flex-direction: column;
+        }
+        .imagen--contacto {
+            display: none;
+        }
+        .contenedor__tarjetas--cursos {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
     
