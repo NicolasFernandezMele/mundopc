@@ -41,8 +41,15 @@
     /* DISEÑO */
     
     .diseño {
-        display: grid;
+        display: flex;
         grid-template-areas: "nav nav" "main main" "footer footer";
+        grid-template-columns: 15% 85%;
+        flex-direction: column;
+    }
+    
+    .diseño2 {
+        display: grid;
+        grid-template-areas: "nav nav" "aside main" "footer footer";
         grid-template-columns: 15% 85%;
     }
     
@@ -267,6 +274,10 @@
     }
     /* SECTION 1 */
     
+    .precio--tachado {
+        text-decoration: line-through;
+    }
+    
     .contenedor__tarjetas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -314,14 +325,6 @@
         justify-content: space-around;
     }
     /* ///////////////////////////////////////////////////////// */
-    
-    .quienessomos {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     /* .banner {
         background-image: url(https://www.destreaming.es/wp-content/uploads/2020/11/pc_para_streaming_gaming.jpg);
         background-size: cover;
@@ -346,6 +349,71 @@
         background-color: #6b757b;
         color: white;
         padding: 2rem 0;
+    }
+    
+    .contenedor__tarjetas--section2 {
+        display: flex;
+        flex-direction: column;
+        height: 25%;
+        gap: 10px;
+        color: rgba(19, 17, 17, 0.28);
+    }
+    
+    .contenido__tarjetas--section2 {
+        display: flex;
+        border-radius: 15px;
+        background-color: rgb(214, 212, 212);
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .contenido__tarjetas--section2 p {
+        padding: 10px;
+    }
+    
+    .contenido__tarjetas--section2 button {
+        width: 300px;
+        height: 75px;
+    }
+    /* CURSOS */
+    
+    .contenedor__tarjetas--cursos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .contenido__tarjetas--cursos {
+        background-color: #6b757b;
+        border-radius: 15px;
+        padding: 30px;
+        color: white;
+    }
+    
+    .contenido__tarjetas--cursos p {}
+    
+    .precios--cursos {
+        font-size: 25px;
+        text-align: center;
+    }
+    /* QUIENES SOMOS */
+    
+    .contenido--quienes {
+        display: grid;
+        grid-template-areas: "info mapa";
+    }
+    
+    .mapa {
+        grid-area: mapa;
+    }
+    
+    .quienessomos {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: info;
     }
     
     @media (max-width:1200px) {
@@ -392,5 +460,11 @@
         }
         .contenido__tarjetas:hover {
             transform: scale(1.0);
+        }
+    }
+    
+    @media (max-width:900px) {
+        .contenido__tarjetas--section2 {
+            flex-direction: column;
         }
     }
