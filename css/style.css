@@ -222,8 +222,7 @@
     form {
         border: 2px solid black;
         padding: 20px;
-        width: 50%;
-        margin: 41px auto;
+        width: 100%;
     }
     
     input,
@@ -240,6 +239,27 @@
     
     .check {
         width: 30px;
+    }
+    
+    .fondo--contacto {
+        background-image: url("http://www.bytescode.com/images/ArmadoPC.jpg");
+    }
+    
+    .contenedor--contacto {
+        background-color: rgba(182, 182, 182, 0.945);
+        padding: 25px;
+    }
+    
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .gridpersonal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
     /* /////////////////////////////////////////////////////////// */
     
@@ -390,10 +410,12 @@
         color: white;
     }
     
-    .contenido__tarjetas--cursos p {}
+    .main--curso {
+        margin-bottom: 25px;
+    }
     
     .precios--cursos {
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
     }
     /* QUIENES SOMOS */
@@ -401,10 +423,9 @@
     .contenido--quienes {
         display: grid;
         grid-template-areas: "info mapa";
-    }
-    
-    .mapa {
-        grid-area: mapa;
+        margin-bottom: 40px;
+        height: 100vh;
+        align-items: center;
     }
     
     .quienessomos {
@@ -433,12 +454,6 @@
         .contenido__tarjetas:hover {
             transform: scale(1.1);
         }
-        form {
-            border: 2px solid black;
-            padding: 20px;
-            width: 75%;
-            margin: 41px auto;
-        }
     }
     
     @media (max-width:750px) {
@@ -465,6 +480,17 @@
     
     @media (max-width:900px) {
         .contenido__tarjetas--section2 {
+            flex-direction: column;
+        }
+        .contenido--quienes {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    @media (max-width:1000px) {
+        .gridpersonal {
+            display: flex;
             flex-direction: column;
         }
     }
