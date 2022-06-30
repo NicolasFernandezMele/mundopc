@@ -1,0 +1,17 @@
+/* CENTRADO */
+
+.centro {
+    margin: 0 auto;
+}
+
+.centrado {
+    @include centrado(0 auto, 1200px);
+}
+
+.sombras {
+    @include sombras-botones;
+}
+
+.bordes {
+    border-radius: 15px;
+}

@@ -1,0 +1,20 @@
+.contenedor__tarjetas--cursos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contenido__tarjetas--cursos {
+    border-radius: 15px;
+    padding: 30px;
+    @include fondo-letra(map-get($colors, gris), map-get($colors, blanco));
+}
+
+.main--curso {
+    margin-bottom: 25px;
+}
+
+.precios--cursos {
+    font-size: 30px;
+    text-align: center;
+}

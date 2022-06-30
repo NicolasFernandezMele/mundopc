@@ -1,0 +1,21 @@
+aside {
+    text-align: center;
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        margin-top: 25px
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.titulo1 {
+    display: inline;
+    color: map-get($colors, rojo);
+    font-size: 40px;
+    margin-right: 400px;
+}

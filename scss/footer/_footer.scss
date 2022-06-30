@@ -1,0 +1,14 @@
+.footer_nav {
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    li {
+        color: map-get($colors, blaco);
+        text-align: center;
+        a {
+            color: map-get($colors, blanco)
+        }
+    }
+}

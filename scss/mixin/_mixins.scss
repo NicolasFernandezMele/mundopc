@@ -1,0 +1,26 @@
+@mixin sombras-botones {
+    -webkit-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.28);
+}
+
+@mixin sombras-lado-derecho {
+    -webkit-box-shadow: 11px 1px 5px -1px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 11px 1px 5px -1px rgba(0, 0, 0, 0.28);
+    box-shadow: 17px 9px 28px -1px rgba(0, 0, 0, 0.28);
+}
+
+@mixin centrado($margen, $max-ancho) {
+    margin: $margen;
+    max-width: $max-ancho;
+}
+
+@mixin fondo-letra($fondo, $color) {
+    background-color: $fondo;
+    color: $color;
+}
+
+@mixin normalizacion {
+    margin: 0;
+    padding: 0;
+}

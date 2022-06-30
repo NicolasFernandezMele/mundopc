@@ -1,0 +1,90 @@
+/* SECTION 1 */
+
+.precio--tachado {
+    text-decoration: line-through;
+}
+
+.contenedor__tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+}
+
+.contenido__tarjetas {
+    margin: 15px;
+    transition: 0.3s;
+    background-color: white;
+    padding: 15px;
+    &:hover {
+        transform: scale(1.11);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+section {
+    img {
+        width: 100%;
+    }
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+    border-width: 0;
+    &:hover {
+        padding: 15px;
+        width: 100%;
+        margin-top: 15px;
+        @include fondo-letra(map-get($colors, verde), map-get($colors, blanco));
+    }
+}
+
+.button--sabermas:hover {
+    @extend button;
+    @include fondo-letra(map-get($colors, gris), map-get($colors, negro))
+}
+
+.precios {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* SECTION2 */
+
+.main-section2 {
+    @include fondo-letra(#6b757b, map-get($colors, blanco));
+    padding: 2rem 0;
+}
+
+.contenedor__tarjetas--section2 {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    gap: 10px;
+    color: map-get($colors, negro);
+    ;
+}
+
+.contenido__tarjetas--section2 {
+    display: flex;
+    border-radius: 15px;
+    background-color: map-get($colors, blanco);
+    padding: 20px;
+    gap: 15px;
+    button {
+        width: 300px;
+        height: 75px;
+    }
+}
+
+.contenido__tarjetas--section2 {
+    p {
+        padding: 10px;
+    }
+}

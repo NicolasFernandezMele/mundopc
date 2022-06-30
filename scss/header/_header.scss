@@ -1,0 +1,42 @@
+.encabezado {
+    background: linear-gradient(90deg, rgba(246, 255, 130, 1) 0%, rgba(249, 252, 134, 1) 100%, rgba(255, 0, 0, 1) 100%);
+    padding: 15px;
+    height: 80px;
+    @include sombras-botones;
+    z-index: 1;
+}
+
+.contenedor__imagen {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.centrado h2 {
+    margin: 12px;
+}
+
+.titulo {
+    font-size: 25px;
+}
+
+nav {
+    display: inline;
+}
+
+.navegacion {
+    display: flex;
+    li {
+        list-style: none;
+    }
+}
+
+.logo {
+    text-decoration: none;
+}

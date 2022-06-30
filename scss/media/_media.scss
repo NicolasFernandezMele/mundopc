@@ -1,0 +1,68 @@
+@media (max-width:1200px) {
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    .titulo1 {
+        margin-right: 0;
+    }
+    .contenedor__tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenido__tarjetas:hover {
+        transform: scale(1.1);
+    }
+    .encabezado {
+        height: 110px;
+    }
+}
+
+@media (max-width:750px) {
+    aside {
+        display: none;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .diseño {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor__tarjetas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contenido__tarjetas:hover {
+        transform: scale(1.0);
+    }
+    .contenedor__tarjetas--cursos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .encabezado {
+        height: 210px;
+    }
+}
+
+@media (max-width:900px) {
+    .contenido__tarjetas--section2 {
+        flex-direction: column;
+    }
+    .contenido--quienes {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen--contacto {
+        display: none;
+    }
+    .contenedor__tarjetas--cursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:1000px) {
+    .gridpersonal {
+        display: flex;
+        flex-direction: column;
+    }
+}

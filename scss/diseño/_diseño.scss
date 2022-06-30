@@ -1,0 +1,44 @@
+.diseño {
+    display: flex;
+    grid-template-areas: "nav nav" "main main" "footer footer";
+    grid-template-columns: 15% 85%;
+    flex-direction: column;
+}
+
+.diseño2 {
+    @extend .diseño;
+    display: grid;
+    grid-template-areas: "nav nav" "aside main" "footer footer";
+    grid-template-columns: 15% 85%;
+    flex-direction: row;
+}
+
+header {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    min-height: 72vh;
+    background-color: azure;
+}
+
+aside {
+    grid-area: aside;
+    height: 100%;
+    padding: 20px;
+    align-content: center;
+    @include sombras-lado-derecho;
+    z-index: 1;
+}
+
+section {
+    grid-area: contenido;
+    margin: 0 auto;
+}
+
+footer {
+    grid-area: footer;
+    height: 15vh;
+    background-color: map-get($colors, negro);
+}

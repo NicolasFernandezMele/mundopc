@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.16"
+    },
+    "name": "root",
+    "version": "1.0.0",
+    "description": "Proyecto Final",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NicolasFernandezMele/mundopc.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/NicolasFernandezMele/mundopc/issues"
+    },
+    "homepage": "https://github.com/NicolasFernandezMele/mundopc#readme"
+}
