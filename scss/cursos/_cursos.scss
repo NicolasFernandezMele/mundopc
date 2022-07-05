@@ -7,7 +7,12 @@
 .contenido__tarjetas--cursos {
     border-radius: 15px;
     padding: 30px;
-    @include fondo-letra(map-get($colors, gris), map-get($colors, blanco));
+    background-color: rgba(182, 182, 182, 0.945);
+    color: black;
+    height: 575px;
+    display: grid;
+    grid-template-rows: 35% 24% 20% 20%;
+    @include fondo-letra(map-get($colors, gris), map-get($colors, negro));
 }
 
 .main--curso {

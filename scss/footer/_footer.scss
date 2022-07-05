@@ -1,3 +1,5 @@
+footer {}
+
 .footer_nav {
     max-width: 1000px;
     margin: auto;
@@ -11,4 +13,44 @@
             color: map-get($colors, blanco)
         }
     }
+}
+
+.footer__contenido {
+    display: grid;
+    grid-template-areas: "footer_suscipcion footer_suscipcion" "footer_nav footer_contacto";
+    color: map-get($colors, blanco);
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer__suscipcion {
+    display: grid;
+    grid-area: footer_suscipcion;
+    grid-template-columns: 25% 50% 25%;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    input {
+        margin: 0;
+    }
+    button {
+        height: 40px;
+        margin: 0;
+        border-radius: 0;
+        @include fondo_letra(map-get($colors, rojo), map-get($colors, blanco));
+        &:hover {
+            height: 40px;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+.footer__nav {
+    grid-area: footer_nav;
+}
+
+.footer__contacto {
+    grid-area: footer_contacto;
 }

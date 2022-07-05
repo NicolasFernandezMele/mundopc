@@ -12,9 +12,6 @@
     .contenido__tarjetas:hover {
         transform: scale(1.1);
     }
-    .encabezado {
-        height: 110px;
-    }
 }
 
 @media (max-width:750px) {
@@ -39,12 +36,22 @@
         flex-direction: column;
         margin: 10px;
     }
-    .encabezado {
-        height: 210px;
+    .menu {
+        display: inline;
+    }
+    .navegacion {
+        display: none;
+    }
+    .btn-menu {
+        background-color: red;
+        padding: 12px;
+        &:hover {
+            padding: 12px;
+        }
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:991px) {
     .contenido__tarjetas--section2 {
         flex-direction: column;
     }
@@ -58,11 +65,31 @@
     .contenedor__tarjetas--cursos {
         grid-template-columns: repeat(2, 1fr);
     }
+    .container-fluid {
+        flex-direction: column;
+    }
+    .encabezado {
+        height: 150px;
+    }
+    .navbar-nav {
+        background-color: white;
+        width: 200px;
+        padding: 25px;
+        text-align: center;
+        @include sombras;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width:1000px) {
     .gridpersonal {
         display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:551px) {
+    .contenido {
         flex-direction: column;
     }
 }

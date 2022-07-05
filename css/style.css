@@ -85,7 +85,6 @@ section {
 
 footer {
   grid-area: footer;
-  height: 15vh;
   background-color: black; }
 
 /* HEADER */
@@ -125,6 +124,33 @@ nav {
 .logo {
   text-decoration: none; }
 
+.nav-link {
+  transition: 0.3s; }
+  .nav-link:hover {
+    color: #ca5f5f;
+    transform: scale(1.2); }
+
+.menu {
+  display: none; }
+
+.navbar-expand-lg .navbar-collapse {
+  flex-basis: auto;
+  justify-content: flex-end; }
+
+.container-fluid {
+  flex-direction: row; }
+
+.navbar-toggler {
+  background-color: rgba(182, 182, 182, 0.945);
+  width: 80px;
+  height: 50px;
+  padding: 0; }
+  .navbar-toggler:hover {
+    background-color: #587967;
+    width: 80px;
+    height: 50px;
+    padding: 0; }
+
 /* ASIDE */
 aside {
   text-align: center; }
@@ -152,6 +178,40 @@ aside {
     text-align: center; }
     .footer_nav li a {
       color: #fff; }
+
+.footer__contenido {
+  display: grid;
+  grid-template-areas: "footer_suscipcion footer_suscipcion" "footer_nav footer_contacto";
+  color: #fff;
+  gap: 20px;
+  padding: 20px; }
+
+.footer__suscipcion {
+  display: grid;
+  grid-area: footer_suscipcion;
+  grid-template-columns: 25% 50% 25%;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .footer__suscipcion input {
+    margin: 0; }
+  .footer__suscipcion button, .footer__suscipcion .button--sabermas:hover {
+    height: 40px;
+    margin: 0;
+    border-radius: 0;
+    background-color: #ca5f5f;
+    color: #fff; }
+    .footer__suscipcion button:hover, .footer__suscipcion .button--sabermas:hover {
+      height: 40px;
+      margin: 0;
+      border-radius: 0; }
+
+.footer__nav {
+  grid-area: footer_nav; }
+
+.footer__contacto {
+  grid-area: footer_contacto; }
 
 /* CONTACTO */
 form {
@@ -270,7 +330,12 @@ button, .button--sabermas:hover {
   border-radius: 15px;
   padding: 30px;
   background-color: rgba(182, 182, 182, 0.945);
-  color: #fff; }
+  color: black;
+  height: 575px;
+  display: grid;
+  grid-template-rows: 35% 24% 20% 20%;
+  background-color: rgba(182, 182, 182, 0.945);
+  color: black; }
 
 .main--curso {
   margin-bottom: 25px; }
@@ -303,9 +368,7 @@ button, .button--sabermas:hover {
   .contenedor__tarjetas {
     grid-template-columns: repeat(2, 1fr); }
   .contenido__tarjetas:hover {
-    transform: scale(1.1); }
-  .encabezado {
-    height: 110px; } }
+    transform: scale(1.1); } }
 
 @media (max-width: 750px) {
   aside {
@@ -323,10 +386,17 @@ button, .button--sabermas:hover {
     display: flex;
     flex-direction: column;
     margin: 10px; }
-  .encabezado {
-    height: 210px; } }
+  .menu {
+    display: inline; }
+  .navegacion {
+    display: none; }
+  .btn-menu {
+    background-color: red;
+    padding: 12px; }
+    .btn-menu:hover {
+      padding: 12px; } }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .contenido__tarjetas--section2 {
     flex-direction: column; }
   .contenido--quienes {
@@ -335,9 +405,26 @@ button, .button--sabermas:hover {
   .imagen--contacto {
     display: none; }
   .contenedor__tarjetas--cursos {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .container-fluid {
+    flex-direction: column; }
+  .encabezado {
+    height: 150px; }
+  .navbar-nav {
+    background-color: white;
+    width: 200px;
+    padding: 25px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 10px; } }
 
 @media (max-width: 1000px) {
   .gridpersonal {
     display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 551px) {
+  .contenido {
     flex-direction: column; } }
