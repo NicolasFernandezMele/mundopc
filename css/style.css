@@ -254,6 +254,9 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px; }
 
+.fondo--contacto h1 {
+  display: none; }
+
 /* INDEX */
 /* SECTION 1 */
 .precio--tachado {
@@ -409,7 +412,13 @@ button, .button--sabermas:hover {
     text-align: center; }
   .footer__suscipcion {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .botones--cursos {
+    flex-direction: column; }
+    .botones--cursos button, .botones--cursos .button--sabermas:hover {
+      width: 100%; }
+  .footer__contacto ul li {
+    list-style: none; } }
 
 @media (max-width: 991px) {
   .contenido__tarjetas--section2 {
@@ -433,7 +442,10 @@ button, .button--sabermas:hover {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .botones--cursos {
+    justify-content: center;
+    display: flex; } }
 
 @media (max-width: 1000px) {
   .gridpersonal {
