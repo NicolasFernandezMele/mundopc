@@ -356,7 +356,8 @@ button, .button--sabermas:hover {
 .contenido--quienes {
   display: flex;
   margin-bottom: 40px;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .quienessomos {
   padding: 50px;
@@ -365,6 +366,9 @@ button, .button--sabermas:hover {
   justify-content: center;
   align-items: center;
   grid-area: info; }
+
+.imagen--contacto {
+  width: 450px; }
 
 /* MEDIAS */
 @media (max-width: 1200px) {
