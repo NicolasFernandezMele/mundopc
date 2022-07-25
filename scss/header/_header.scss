@@ -37,6 +37,13 @@ nav {
     }
 }
 
+.navegacion_footer {
+    display: flex;
+    li {
+        list-style: none;
+    }
+}
+
 .logo {
     text-decoration: none;
 }

@@ -42,12 +42,25 @@
     .navegacion {
         display: none;
     }
+    .navegacion_footer {
+        display: flex;
+        flex-direction: column;
+    }
     .btn-menu {
         background-color: red;
         padding: 12px;
         &:hover {
             padding: 12px;
         }
+    }
+    .footer__contenido {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__suscipcion {
+        display: flex;
+        flex-direction: column;
     }
 }
 

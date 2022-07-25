@@ -121,6 +121,11 @@ nav {
   .navegacion li {
     list-style: none; }
 
+.navegacion_footer {
+  display: flex; }
+  .navegacion_footer li {
+    list-style: none; }
+
 .logo {
   text-decoration: none; }
 
@@ -323,7 +328,7 @@ button, .button--sabermas:hover {
 /* CURSOS */
 .contenedor__tarjetas--cursos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px; }
 
 .contenido__tarjetas--cursos {
@@ -390,11 +395,21 @@ button, .button--sabermas:hover {
     display: inline; }
   .navegacion {
     display: none; }
+  .navegacion_footer {
+    display: flex;
+    flex-direction: column; }
   .btn-menu {
     background-color: red;
     padding: 12px; }
     .btn-menu:hover {
-      padding: 12px; } }
+      padding: 12px; }
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .footer__suscipcion {
+    display: flex;
+    flex-direction: column; } }
 
 @media (max-width: 991px) {
   .contenido__tarjetas--section2 {
